@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rose &amp; Co - Reparation et Vente de Fleurs</title>
+    <meta
+      name="description"
+      content="Boutique specialisee dans la reparation et la vente de fleurs. Services sur-mesure, conseils, et compositions qui durent."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header" data-elevate-on-scroll>
+      <div class="container header-inner">
+        <div class="brand" aria-label="Rose &amp; Co">
+          <span class="brand-mark" aria-hidden="true">RC</span>
+          <span class="brand-name">Rose &amp; Co</span>
+        </div>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span class="menu-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Navigation principale" data-nav>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#galerie">Galerie</a>
+          <a class="nav-link" href="#temoignages">Temoignages</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-cta" href="#contact">Demander un devis</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero" aria-label="Introduction">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Reparation &amp; Vente de Fleurs</p>
+            <h1>
+              Vos bouquets retrouvent leur forme,
+              <span class="accent">sans compromis</span>.
+            </h1>
+            <p class="lead">
+              Rose &amp; Co aide vos fleurs a durer plus longtemps: reparation minutieuse,
+              compositions sur-mesure et conseils d'entretien.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#services" data-scroll>Voir nos services</a>
+              <a class="btn btn-ghost" href="#contact" data-scroll>Nous contacter</a>
+            </div>
+
+            <div class="hero-badges" aria-label="Points forts">
+              <div class="badge">
+                <span class="badge-icon" aria-hidden="true">[outil]</span>
+                <span class="badge-text">Reparation delicate</span>
+              </div>
+              <div class="badge">
+                <span class="badge-icon" aria-hidden="true">[feuille]</span>
+                <span class="badge-text">Fleurs de saison</span>
+              </div>
+              <div class="badge">
+                <span class="badge-icon" aria-hidden="true">[fin]</span>
+                <span class="badge-text">Finitions haut de gamme</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Apercu du savoir-faire">
+            <div class="hero-card-top">
+              <div class="stat">
+                <div class="stat-value">30+</div>
+                <div class="stat-label">Styles de bouquets</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">24h</div>
+                <div class="stat-label">Reponse a votre demande*</div>
+              </div>
+            </div>
+            <div class="hero-card-mid">
+              <div class="sample sample-1" title="Reparation">
+                <div class="sample-inner">
+                  <div class="sample-title">Avant / Apres</div>
+                  <div class="sample-sub">Rafraichissement, recollement, retouche</div>
+                </div>
+              </div>
+              <div class="sample sample-2" title="Creation">
+                <div class="sample-inner">
+                  <div class="sample-title">Creation sur-mesure</div>
+                  <div class="sample-sub">Couleurs, volume, et texture</div>
+                </div>
+              </div>
+            </div>
+            <p class="hero-note">
+              *Selon disponibilite. Cette page ne propose pas de fonctionnalite de vente.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Nos services</h2>
+            <p>
+              Des solutions adaptees a vos fleurs, qu'elles soient abimees, fanees ou tout simplement a sublimer.
+            </p>
+          </div>
+
+          <div class="cards-grid" role="list">
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">[fix]</div>
+              <h3>Reparation de bouquets</h3>
+              <p class="muted">
+                Recollement, remplacement de tiges, ajustement de volume et finitions propres.
+              </p>
+              <button class="card-link" type="button" data-open-modal data-template="service-reparation">
+                En savoir plus
+              </button>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">[art]</div>
+              <h3>Compositions sur-mesure</h3>
+              <p class="muted">
+                Inspirez-nous: couleurs, style, budget et occasion (anniversaire, fete, etc.).
+              </p>
+              <button class="card-link" type="button" data-open-modal data-template="service-sur-mesure">
+                En savoir plus
+              </button>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">[conseil]</div>
+              <h3>Conseils d'entretien</h3>
+              <p class="muted">
+                Conseils simples pour prolonger la fraicheur: eau, coupe, emplacement, astuces.
+              </p>
+              <button class="card-link" type="button" data-open-modal data-template="service-entretien">
+                En savoir plus
+              </button>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-icon" aria-hidden="true">[vitrine]</div>
+              <h3>Vente de fleurs (presentation)</h3>
+              <p class="muted">
+                Des selections de saison pour accompagner vos moments. Aucun paiement ici: juste une vitrine.
+              </p>
+              <button class="card-link" type="button" data-open-modal data-template="service-selection">
+                En savoir plus
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galerie" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Galerie</h2>
+            <p>Quelques idees de compositions et de refections. Filtrez pour trouver le style qui vous ressemble.</p>
+          </div>
+
+          <div class="chip-row" role="tablist" aria-label="Filtres de galerie">
+            <button class="chip is-active" type="button" data-filter="all" role="tab" aria-selected="true">Tout</button>
+            <button class="chip" type="button" data-filter="reparation" role="tab" aria-selected="false">Reparation</button>
+            <button class="chip" type="button" data-filter="creation" role="tab" aria-selected="false">Creation</button>
+            <button class="chip" type="button" data-filter="entretien" role="tab" aria-selected="false">Entretien</button>
+          </div>
+
+          <div class="gallery-grid" id="galleryGrid" aria-live="polite">
+            <div class="gallery-item" data-cat="reparation">
+              <div class="gallery-media" style="--g1: #ff7aa2; --g2: #ffd1dc" aria-hidden="true"></div>
+              <div class="gallery-meta">
+                <div class="gallery-title">Reparation delicate</div>
+                <div class="gallery-sub">Retouche et recollement</div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-cat="creation">
+              <div class="gallery-media" style="--g1: #7ee3ff; --g2: #c7f2ff" aria-hidden="true"></div>
+              <div class="gallery-meta">
+                <div class="gallery-title">Composition pastel</div>
+                <div class="gallery-sub">Volume et textures</div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-cat="creation">
+              <div class="gallery-media" style="--g1: #ffd26f; --g2: #fff1c7" aria-hidden="true"></div>
+              <div class="gallery-meta">
+                <div class="gallery-title">Couleurs chaleureuses</div>
+                <div class="gallery-sub">Fleurs de saison</div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-cat="entretien">
+              <div class="gallery-media" style="--g1: #7dffb0; --g2: #d6ffe9" aria-hidden="true"></div>
+              <div class="gallery-meta">
+                <div class="gallery-title">Astuce fraicheur</div>
+                <div class="gallery-sub">Eau, coupe et emplacement</div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-cat="reparation">
+              <div class="gallery-media" style="--g1: #caa6ff; --g2: #eadfff" aria-hidden="true"></div>
+              <div class="gallery-meta">
+                <div class="gallery-title">Finition soignee</div>
+                <div class="gallery-sub">Details et alignement</div>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-cat="creation">
+              <div class="gallery-media" style="--g1: #ff8a5b; --g2: #ffd0c2" aria-hidden="true"></div>
+              <div class="gallery-meta">
+                <div class="gallery-title">Style chic</div>
+                <div class="gallery-sub">Harmonie des teintes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="temoignages" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Temoignages</h2>
+            <p>Des retours qui parlent de notre approche: precision, ecoute et finitions.</p>
+          </div>
+
+          <div class="testimonials">
+            <figure class="quote">
+              <blockquote>
+                Mon bouquet etait abime. Le resultat est incroyable: plus frais, plus beau, et surtout proprement restaure.
+              </blockquote>
+              <figcaption>— Samira, cliente</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                Super conseils pour l'entretien. J'ai prolonge la duree de ma composition pendant plusieurs jours.
+              </blockquote>
+              <figcaption>— Karim, client</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                Une creation sur-mesure exactement dans l'ambiance que je voulais. Merci pour votre ecoute.
+              </blockquote>
+              <figcaption>— Leila, cliente</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Questions frequentes</h2>
+            <p>Tout ce qu'il faut savoir avant de nous contacter.</p>
+          </div>
+
+          <div class="accordion" data-accordion>
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="true" data-acc-toggle="0">
+                Comment se passe la reparation de bouquets ?
+              </button>
+              <div class="acc-panel" data-acc-panel="0">
+                <p class="acc-content">
+                  On examine l'etat des fleurs, on identifie les zones a retoucher, puis on effectue une refection minutieuse
+                  (tiges, recollement, ajustements et finitions).
+                </p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false" data-acc-toggle="1">
+                Pouvez-vous reproduire un style precis ?
+              </button>
+              <div class="acc-panel" data-acc-panel="1" hidden>
+                <p class="acc-content">
+                  Oui. Envoyez vos references (couleurs, photo ou description) et nous adapterons la composition selon vos preferences.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false" data-acc-toggle="2">
+                Proposez-vous des conseils d'entretien ?
+              </button>
+              <div class="acc-panel" data-acc-panel="2" hidden>
+                <p class="acc-content">
+                  Absolument. Nous partageons des recommandations simples (eau, coupe, exposition) pour prolonger la fraicheur.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false" data-acc-toggle="3">
+                Cette page permet-elle d'acheter en ligne ?
+              </button>
+              <div class="acc-panel" data-acc-panel="3" hidden>
+                <p class="acc-content">
+                  Non. Cette landing page sert a presenter les services. Le formulaire de contact n'execute aucun achat.
+                </p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false" data-acc-toggle="4">
+                Quel delai de reponse ?
+              </button>
+              <div class="acc-panel" data-acc-panel="4" hidden>
+                <p class="acc-content">
+                  En general, nous repondons sous 24h ouvrables selon disponibilite. Sinon, nous vous avertissons rapidement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-wrap">
+            <div class="contact-copy">
+              <h2>Contact</h2>
+              <p class="muted">
+                Decrivez votre demande (reparation, composition, entretien). Nous vous recontactons pour proposer une solution.
+              </p>
+
+              <div class="contact-details" aria-label="Coordonnees">
+                <div class="detail">
+                  <div class="detail-icon" aria-hidden="true">MAP</div>
+                  <div class="detail-text">
+                    <div class="detail-title">Adresse</div>
+                    <div class="detail-value">Votre quartier, votre ville</div>
+                  </div>
+                </div>
+                <div class="detail">
+                  <div class="detail-icon" aria-hidden="true">TIME</div>
+                  <div class="detail-text">
+                    <div class="detail-title">Horaires</div>
+                    <div class="detail-value">Lun-Sam: 9h - 19h</div>
+                  </div>
+                </div>
+                <div class="detail">
+                  <div class="detail-icon" aria-hidden="true">TEL</div>
+                  <div class="detail-text">
+                    <div class="detail-title">Telephone</div>
+                    <div class="detail-value">+00 000 000 000</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-mini">
+                <p class="mini-title">Astuce</p>
+                <p class="mini-text">
+                  Si vous avez une photo du bouquet, ajoutez-la dans votre message. (Ici, la page ne televerse rien: c'est une indication.)
+                </p>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" autocomplete="on">
+              <div class="form-row">
+                <label class="label" for="name">Nom</label>
+                <input class="input" id="name" name="name" type="text" placeholder="Votre nom" required />
+              </div>
+              <div class="form-row">
+                <label class="label" for="emailOrPhone">Email ou Telephone</label>
+                <input
+                  class="input"
+                  id="emailOrPhone"
+                  name="emailOrPhone"
+                  type="text"
+                  placeholder="ex: nom@mail.com ou +00..."
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label class="label" for="message">Votre demande</label>
+                <textarea
+                  class="textarea"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Ex: reparation d'un bouquet abime, couleurs preferees, delai..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+                <button class="btn btn-ghost" type="button" data-reset-form>Reinitialiser</button>
+              </div>
+
+              <p class="form-footnote">
+                Aucun achat. Ce formulaire affiche un message de confirmation localement (sans envoi serveur).
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand" aria-label="Rose &amp; Co">
+            <span class="brand-mark" aria-hidden="true">RC</span>
+            <span class="brand-name">Rose &amp; Co</span>
+          </div>
+          <p class="muted">
+            Reparation, conseils et creations florales. Cette page est une vitrine sans fonctionnalite de vente.
+          </p>
+        </div>
+
+        <div class="footer-links" aria-label="Liens rapides">
+          <a href="#services" data-scroll>Services</a>
+          <a href="#galerie" data-scroll>Galerie</a>
+          <a href="#faq" data-scroll>FAQ</a>
+          <a href="#contact" data-scroll>Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="serviceModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Details du service">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-card">
+        <div class="modal-head">
+          <div class="modal-title" id="modalTitle">Service</div>
+          <button class="icon-btn" type="button" aria-label="Fermer" data-close-modal>
+            <span aria-hidden="true">X</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Templates de contenu modal -->
+    <template id="service-reparation">
+      <h3>Reparation de bouquets</h3>
+      <p class="muted">
+        On restaure vos bouquets avec precision, pour retrouver la forme, l'harmonie des fleurs et des finitions propres.
+      </p>
+      <ul class="modal-list">
+        <li>Recollement et ajustement des tiges</li>
+        <li>Remplacement des elements abimes</li>
+        <li>Retouche visuelle et alignement</li>
+        <li>Conseils pour prolonger la fraicheur</li>
+      </ul>
+      <p class="modal-note muted">
+        Le resultat depend de l'etat initial. Contactez-nous pour une evaluation.
+      </p>
+    </template>
+
+    <template id="service-sur-mesure">
+      <h3>Compositions sur-mesure</h3>
+      <p class="muted">
+        Une composition selon votre ambiance: couleurs, textures, volume et style. On vous accompagne du concept aux finitions.
+      </p>
+      <ul class="modal-list">
+        <li>Choix des couleurs et de la palette</li>
+        <li>Adaptation au budget et au delai</li>
+        <li>Finitions premium (rubans, emballage)</li>
+        <li>Suggestions d'entretien personnalisees</li>
+      </ul>
+      <p class="modal-note muted">
+        Remplissez le formulaire pour decrire votre demande.
+      </p>
+    </template>
+
+    <template id="service-entretien">
+      <h3>Conseils d'entretien</h3>
+      <p class="muted">
+        Des gestes simples pour garder vos fleurs plus longtemps. Ideal pour les fleurs fraiches comme pour les compositions restaurees.
+      </p>
+      <ul class="modal-list">
+        <li>Coupe des tiges et rythme de remplacement de l'eau</li>
+        <li>Emplacement recommande (lumiere, temperature)</li>
+        <li>Gestes pour eviter le fana</li>
+        <li>Recommandations selon le type de fleurs</li>
+      </ul>
+      <p class="modal-note muted">
+        Conseils pratiques, sans jargon.
+      </p>
+    </template>
+
+    <template id="service-selection">
+      <h3>Vente de fleurs (presentation)</h3>
+      <p class="muted">
+        Une vitrine de nos selections de saison et de nos styles. Cette page ne traite aucun paiement: elle sert a mettre en valeur nos services.
+      </p>
+      <ul class="modal-list">
+        <li>Selections de saison (inspirees du marche)</li>
+        <li>Styles: chic, naturel, pastel, varie</li>
+        <li>Options d'emballage et finitions</li>
+        <li>Recommandations d'entretien apres composition</li>
+      </ul>
+      <p class="modal-note muted">
+        Contactez-nous pour plus de details sur les disponibilites.
+      </p>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+
